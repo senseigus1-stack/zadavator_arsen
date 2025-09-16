@@ -9,3 +9,7 @@ from aiogram.types import Message, FSInputFile
 
 from config import TOKEN
 from teleg_bot.us_statements import Bot_Statements
+ 
+bot = Bot(token=TOKEN)
+router = Router()
+

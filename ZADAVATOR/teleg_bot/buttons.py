@@ -2,6 +2,7 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
 from teleg_bot.config import sigma
 
+#стандартные кнопки 
 def main_kb(user_telegram_id: int):
     kb_list = [
         [KeyboardButton(text='get_task')],
@@ -14,7 +15,7 @@ def main_kb(user_telegram_id: int):
                                 
     return keyboard
 
-
+# ну хз нахуй кнопка это
 def welcome_kb(user_telegram_id: int):
     kb_list = [
         [KeyboardButton(text='reg')],
@@ -25,6 +26,7 @@ def welcome_kb(user_telegram_id: int):
     keyboard = ReplyKeyboardMarkup(keyboard=kb_list, resize_keyboard=True, one_time_keyboard=True, is_persistent=True)
     return keyboard
 
+# тоже по сути и по содержанию хуйня
 def send_all_kb():
     kb_list = [
         [KeyboardButton(text='send_all')],
